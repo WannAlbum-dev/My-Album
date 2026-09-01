@@ -1,0 +1,178 @@
+  <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Moments ✦</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #080808;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            min-height: 100vh;
+            padding: 35px 20px;
+        }
+
+        body::before {
+            content: "✦  ·  ˚  ✧  ·  ✦  ˚  ·  ✧";
+            position: fixed;
+            top: 20px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            color: rgba(255,255,255,0.25);
+            font-size: 15px;
+            letter-spacing: 8px;
+            pointer-events: none;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 35px;
+            padding-top: 20px;
+        }
+
+        .header h1 {
+            font-size: 30px;
+            font-weight: 500;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #999;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        .line {
+            width: 45px;
+            height: 1px;
+            background: #777;
+            margin: 18px auto 0;
+        }
+
+        /* GALERI */
+        .gallery {
+            columns: 3 250px;
+            column-gap: 15px;
+        }
+
+        .photo {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            break-inside: avoid;
+
+            box-shadow:
+                0 0 8px rgba(255,255,255,0.08),
+                0 0 25px rgba(255,255,255,0.03);
+
+            transition: 0.3s ease;
+        }
+
+        .photo:hover {
+            transform: translateY(-3px);
+            box-shadow:
+                0 0 12px rgba(255,255,255,0.15),
+                0 0 30px rgba(255,255,255,0.05);
+        }
+
+        /* BINTANG KECIL */
+        .stars {
+            text-align: center;
+            color: #777;
+            font-size: 12px;
+            letter-spacing: 7px;
+            margin-top: 30px;
+        }
+
+        .footer {
+            text-align: center;
+            color: #555;
+            font-size: 12px;
+            margin-top: 20px;
+            letter-spacing: 1px;
+        }
+
+        /* HP */
+        @media (max-width: 600px) {
+
+            body {
+                padding: 25px 12px;
+            }
+
+            .header h1 {
+                font-size: 24px;
+                letter-spacing: 2px;
+            }
+
+            .gallery {
+                columns: 2 140px;
+                column-gap: 9px;
+            }
+
+            .photo {
+                margin-bottom: 9px;
+                border-radius: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- JUDUL -->
+        <div class="header">
+            <h1>Our Moments ✦</h1>
+            <p>little memories worth keeping</p>
+            <div class="line"></div>
+        </div>
+
+        <!-- GALERI FOTO -->
+        <div class="gallery">
+
+            <img
+                class="photo"
+                src="IMG_20220502_102359_050502.jpg"
+                alt="Our Moment 1"
+            >
+
+            <img
+                class="photo"
+                src="moment/IMG_20260827_224901_888.jpg"
+                alt="Our Moment 2"
+            >
+
+        </div>
+
+        <!-- Hiasan -->
+        <div class="stars">
+            ✦　·　✧　·　✦
+        </div>
+
+        <div class="footer">
+            memories ♡
+        </div>
+
+    </div>
+
+</body>
+</html>
